@@ -40,6 +40,7 @@
     gnome-disk-utility
     baobab
     lazygit
+    micro
  ];
 
   # Stylix targets
@@ -49,6 +50,7 @@
     btop.enable = true;
     qt.enable = true;
     fuzzel.enable = true;
+    micro.enable = true;
     lazygit.enable = true;
         librewolf = {
       enable = true;
