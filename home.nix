@@ -86,6 +86,11 @@ settings = {
   };
 };
 
+xdg.configFile."bluetuith/bluetuith.toml".text = ''
+  [ui]
+  show-device-info-window = false
+'';
+
 stylix.iconTheme = {
   enable = true;
   package = pkgs.gruvbox-plus-icons;
