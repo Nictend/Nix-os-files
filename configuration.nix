@@ -124,6 +124,8 @@
 
         programs.kdeconnect.enable = true;	
   
+        services.flatpak.enable = true;
+
   stylix = {
   enable = true;
 #  image = "${inputs.nix-wallpaper.packages.${pkgs.system}.default.override {
