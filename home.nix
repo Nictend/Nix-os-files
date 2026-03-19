@@ -155,7 +155,7 @@ programs.waybar = {
 
 programs.git = {
   enable = true;
-  userName = "nicolas";
+  userName = "Nictend";
   userEmail = "gabrieldesouzanicolas@gmail.com";
     extraConfig = {
     safe.directory = "/etc/nixos";
