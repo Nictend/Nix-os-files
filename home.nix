@@ -40,7 +40,6 @@
     gnome-disk-utility
     baobab
     lazygit
-    micro
  ];
 
   # Stylix targets
@@ -62,6 +61,7 @@
 # home.nix
 programs.alacritty.enable = true;
 programs.btop.enable = true;
+programs.micro.enable = true;
 programs.zed-editor.enable = true;
 programs.fuzzel = {
   enable = true;
