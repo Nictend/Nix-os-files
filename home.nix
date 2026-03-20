@@ -40,6 +40,7 @@
     gnome-disk-utility
     baobab
     lazygit
+    rofimoji
  ];
 
   # Stylix targets
@@ -202,6 +203,8 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY
 
     # App launcher
     riverctl map normal Super D spawn fuzzel
+
+    riverctl map normal Super E spawn 'rofimoji --selector fuzzel'
 
     # Status bar
     waybar &

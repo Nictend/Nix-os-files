@@ -23,6 +23,13 @@
   boot.initrd.verbose = false;
   boot.plymouth.enable = true;
   
+  boot.blacklistedKernelModules = [ "raydium_i2c_ts" ];
+  boot.kernelModules = [];
+  boot.extraModprobeConfig = ''
+    blacklist raydium_i2c_ts
+    install raydium_i2c_ts /bin/false
+  '';
+
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
