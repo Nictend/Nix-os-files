@@ -108,6 +108,9 @@
 	programs.river-classic.enable = true;
         programs.foot.enable = false;
  
+    services.fprintd.enable = true;
+    security.pam.services.sudo.fprintAuth = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
