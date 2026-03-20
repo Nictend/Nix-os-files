@@ -86,10 +86,11 @@ settings = {
   };
 };
 
-xdg.configFile."bluetuith/bluetuith.toml".text = ''
-  [ui]
-  show-device-info-window = false
-'';
+xdg.desktopEntries.arduino-ide = {
+  name = "Arduino IDE";
+  exec = "arduino-ide --enable-features=UseOzonePlatform --ozone-platform=wayland %U";
+  terminal = false;
+};
 
 stylix.iconTheme = {
   enable = true;

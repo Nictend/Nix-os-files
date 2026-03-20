@@ -228,6 +228,7 @@ xdg.portal = {
   MOZ_ENABLE_WAYLAND = "1";
   XCURSOR_THEME = "Capitaine Cursors (Gruvbox)";
   XCURSOR_SIZE = "20";
+  ARDUINO_ENABLE_WAYLAND = "1";
 };
 
 services.greetd.enable = true;
