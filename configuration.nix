@@ -28,7 +28,10 @@
   boot.extraModprobeConfig = ''
     blacklist raydium_i2c_ts
     install raydium_i2c_ts /bin/false
+    options iwlwifi lar_disable=1
   '';
+
+  networking.networkmanager.wifi.scanRandMacAddress = false;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

@@ -27,7 +27,6 @@
     jq
     python3
     swaybg
-    networkmanagerapplet
     grim
     slurp
     wl-clipboard
