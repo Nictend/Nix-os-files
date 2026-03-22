@@ -178,8 +178,8 @@ home.file.".config/river/init" = {
 
     export XDG_CURRENT_DESKTOP=river
     # Import wayland env into systemd user session
-systemctl --user import-environment WAYLAND_DISPLAY
-dbus-update-activation-environment --systemd WAYLAND_DISPLAY
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
   
     # Wallpaper
     swaybg -m fill -i ${config.stylix.image} &
