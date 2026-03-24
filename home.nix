@@ -40,6 +40,7 @@
     baobab
     rofimoji
     obsidian
+    keepassxc
  ];
 
   # Stylix targets
