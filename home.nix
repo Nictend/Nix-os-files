@@ -40,6 +40,7 @@
     baobab
     lazygit
     rofimoji
+    obsidian
  ];
 
   # Stylix targets
@@ -50,7 +51,7 @@
     qt.enable = true;
     fuzzel.enable = true;
     micro.enable = true;
-    lazygit.enable = true;
+    obsidian.enable = true;
         librewolf = {
       enable = true;
       colorTheme.enable = true;

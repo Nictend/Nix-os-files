@@ -139,6 +139,13 @@
   
         services.flatpak.enable = true;
 
+    services.syncthing = {
+      enable = true;
+      user = "nicolas";
+      dataDir = "/home/nicolas";
+      configDir = "/home/nicolas/.config/syncthing";
+    };
+
   stylix = {
   enable = true;
 #  image = "${inputs.nix-wallpaper.packages.${pkgs.system}.default.override {
