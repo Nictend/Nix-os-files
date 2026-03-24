@@ -38,7 +38,6 @@
     gruvbox-dark-icons-gtk
     gnome-disk-utility
     baobab
-    lazygit
     rofimoji
     obsidian
  ];
