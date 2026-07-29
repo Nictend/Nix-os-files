@@ -8,7 +8,7 @@
   outputs = { nixpkgs, helium-flake, ... }: {
     # Attribute name matches the hostname nixos-rebuild will look for
     # (your machine's hostname is currently "nixos").
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.pc2010 = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./configuration.nix

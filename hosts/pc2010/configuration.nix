@@ -18,7 +18,7 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nicolas"; # Define your hostname.
+  networking.hostName = "pc2010"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
  
