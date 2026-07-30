@@ -30,7 +30,7 @@
         ({ pkgs, ... }: {
           nixpkgs.overlays = [ helium-flake.overlays.default ];
           programs.helium.enable = true;
-          programs.helium.flags = [ "--disable-accelerated-video-decode" ];
+          #  programs.helium.flags = [ "--disable-accelerated-video-decode" ];
         })
       ];
     };
