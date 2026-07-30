@@ -38,9 +38,39 @@
   };
 
   programs.starship = {
-    enable = true;
-    enableFishIntegration = true;
+  enable = true;
+  enableFishIntegration = true;
+  settings = {
+    format = "$username$directory$character";
+    add_newline = true;
+
+    username = {
+      style_user = "bg:blue fg:white bold";
+      style_root = "bg:red fg:white bold";
+      format = "[ $user ]($style)";
+      show_always = true;
+    };
+
+    directory = {
+      style = "bg:blue fg:white";
+      format = "[ $path ]($style)";
+      truncation_length = 3;
+      truncate_to_repo = true;
+    };
+
+    character = {
+      success_symbol = "[](bold blue) ";
+      error_symbol = "[](bold red) ";
+    };
+
+    time = {
+      disabled = false;
+      style = "bg:blue fg:white bold";
+      format = "[ $time ]($style)";
+      time_format = "%H:%M";
+    };
   };
+};
 
   programs.fzf = {
     enable = true;
