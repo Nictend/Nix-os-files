@@ -9,7 +9,6 @@
   nix.gc.options = "--delete-older-than 5d";
   nix.optimise.automatic = true;
 
-  networking.wireless.enable = true;
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Sao_Paulo";
@@ -29,13 +28,11 @@
 
   services.xserver.xkb = {
     layout = "br";
-    variant = "";
   };
   console.keyMap = "br-abnt2";
 
   environment.sessionVariables = {
     XKB_DEFAULT_LAYOUT = "br";
-    XKB_DEFAULT_VARIANT = "";
   };
 
   users.users."nicolas" = {
