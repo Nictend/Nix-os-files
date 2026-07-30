@@ -42,6 +42,14 @@
     packages = with pkgs; [];
   };
 
+  stylix.enable = true;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+  stylix.image = ./wallpaper.png;
+  stylix.targets.grub.enable = true;
+
+  programs.fish.enable = true; 
+  users.users.nicolas.shell = pkgs.fish;
+
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
